@@ -29,7 +29,8 @@ download pet clinic sample:
 in order to build the project (and use the ~/.m2 folder between invocations to save the cache)
 
 ``` shell
-docker run -it --rm -v $PWD:/opt/app -w /opt/app -v $PWD/.m2:/root/.m2 maven:3.6.3-jdk-8-openj9 mvn clean
+docker run -it --rm -v $PWD:/opt/app -w /opt/app -v $SOME_FOLDER/.m2:/root/.m2 maven:3.6.3-jdk-8-openj9 mvn clean
+
 ```
 ... now look at your `target` folder
 
