@@ -19,6 +19,8 @@ docker run --rm -it -e AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID} -e AWS_SECRET_ACCE
 
 ### Compilation with your choice of SDK Version  (filesystem sharing) 
 
+
+#### Maven
 Use container to compile code without installing anything locally.  This way you can choose the SDK version without installing it, and can switch easilly.  Also you can run the same compilation multiple times.   
 
 download pet clinic sample:  
@@ -31,3 +33,9 @@ docker run -it --rm -v $PWD:/opt/app -w /opt/app -v $PWD/.m2:/root/.m2 maven:3.6
 ```
 ... now look at your `target` folder
 
+#### Chef
+```shell
+docker run -t -v $PWD:/opt/mychef --rm   -e CHEF_WORK_ENV=Testing chef/chefdk:2.2.2  sh -c "/opt/mychef/single_chef_spec_from_docker.sh"
+docker run -t -v $PWD:/opt/mychef --rm   -e CHEF_WORK_ENV=Testing chef/chefdk:3.1.0  sh -c "/opt/mychef/single_chef_spec_from_docker.sh"
+
+```
