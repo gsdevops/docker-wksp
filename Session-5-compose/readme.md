@@ -11,4 +11,6 @@ installation:
 Docker compose is a single node orchestrator:
 * starts / stops containers
 * assigns ports / ip addresses
+* assigns containers to ports
+* dependencies in service start
 * 
