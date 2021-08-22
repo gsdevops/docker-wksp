@@ -6,7 +6,7 @@
 
 ## Main use cases (for us)
 * Develop components in a multiple-component system; for example when you need several additional servers to operate (redis, rest api, database)
-* CI - set a system with all components on a single host
+* CI - set a system with all components on a single host for integration / system testing
 * Multiple isolated environments on same server 
 
 
