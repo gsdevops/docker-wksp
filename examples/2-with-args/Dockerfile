@@ -1,5 +1,5 @@
-ARG nginx_ver=19.2
-FROM node:$nginx_ver 
+ARG nginx_ver=1.19.2
+FROM nginx:$nginx_ver
 
 COPY html/ /usr/share/nginx/html/
 
