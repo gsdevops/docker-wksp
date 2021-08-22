@@ -13,4 +13,4 @@ Docker compose is a single node orchestrator:
 * assigns ports / ip addresses
 * assigns containers to ports
 * dependencies in service start
-* 
+* use of a `.env` file
