@@ -4,9 +4,13 @@
 
 ### General Docker compose
 Reference: [compose-file format ](https://docs.docker.com/compose/compose-file/)  
+  
+dependencies - https://docs.docker.com/compose/compose-file/compose-file-v3/#depends_on  
+inject env - https://docs.docker.com/compose/compose-file/compose-file-v3/#env_file  
+mount file(systems) - https://docs.docker.com/compose/compose-file/compose-file-v3/#volumes  
 
 In this session we will create a multiple container system, using `docker-compose` that consists of a small 3 tier web application containing a database and a web application.
-  
+
 For this we will use a forked repo from the Spring Samples.  
 clone the following repo:  
 `git clone git@github.com:gsdevops/spring-petclinic.git`  
