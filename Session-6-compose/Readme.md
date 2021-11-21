@@ -17,10 +17,19 @@ clone the following repo:
 
 This repo is a Java based repo.
 
-### Step 1: Build the image
+### Step 1: Build the JAR
 The general command is 
 `mvn clean install -Dmaven.test.skip`
 
 docker run -it --rm -v $PWD:/opt/app -w /opt/app -v $SOME_FOLDER/.m2:/root/.m2  maven:3.8.3 mvn clean install  -Dmaven.test.skip
 
-  
+look at folder `target` and search for a file named similar to `spring-petclinic-2.4.2.jar`.
+
+
+### Step 2: Connect as Regular process
+
+Set JAR configuration to point to Database
+
+
+### Step 3:  Start as docker compose
+
